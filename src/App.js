@@ -18,6 +18,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
+import AddToQueue from '@material-ui/icons/AddToQueue';
 import Home from './pages/Home';
 import Integraciones from './pages/Integraciones';
 import About from './pages/About';
@@ -61,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
-    padding: theme.spacing(3, 0),
+    padding: theme.spacing(1, 0),
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
@@ -99,7 +100,7 @@ const rutas = [
   path: '/integraciones',
   name: 'Integraciones',
   page: Integraciones,
-	ico: InfoIcon,
+	ico: AddToQueue,
 }, 
 {
   path: '/about',
