@@ -21,7 +21,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import Home from './pages/Home';
 import Integraciones from './pages/Integraciones';
 import About from './pages/About';
-
+import Mercadolibre from './pages/Mercadolibre';
 
 const drawerWidth = 200;
 
@@ -194,6 +194,7 @@ export default function App() {
 							<Route path={ruta.path} exact component={ruta.page}  />
           ))
 					}
+					<Route path='/mercadolibre' exact component={Mercadolibre}  />
         </Switch>
       </main>
     </div>

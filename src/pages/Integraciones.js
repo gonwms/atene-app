@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Container } from '@material-ui/core';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -42,14 +43,17 @@ function Integraciones() {
               Integración
             </Typography>
             <Typography variant="h5" component="h2">
-              Mercado libre
+            
+                Mercado libre
+						
             </Typography>
-
             <Typography variant="body2" component="p"></Typography>
           </CardContent>
+            <Link to='/mercadolibre' style={{textDecoration:'none'}}>
           <CardActions>
             <Button size="small">Ver más</Button>
           </CardActions>
+            </Link>
         </Card>
         <Card className={classes.root}>
           <CardContent>
@@ -63,7 +67,6 @@ function Integraciones() {
             <Typography variant="h5" component="h2">
               Magento
             </Typography>
-
             <Typography variant="body2" component="p"></Typography>
           </CardContent>
           <CardActions>
@@ -82,7 +85,6 @@ function Integraciones() {
             <Typography variant="h5" component="h2">
               Vtex
             </Typography>
-
             <Typography variant="body2" component="p"></Typography>
           </CardContent>
           <CardActions>
