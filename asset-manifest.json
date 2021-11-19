@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/atene-app/static/css/main.69eda509.chunk.css",
+    "main.js": "/atene-app/static/js/main.df586072.chunk.js",
+    "main.js.map": "/atene-app/static/js/main.df586072.chunk.js.map",
+    "runtime-main.js": "/atene-app/static/js/runtime-main.a9226f4a.js",
+    "runtime-main.js.map": "/atene-app/static/js/runtime-main.a9226f4a.js.map",
+    "static/js/2.f9402512.chunk.js": "/atene-app/static/js/2.f9402512.chunk.js",
+    "static/js/2.f9402512.chunk.js.map": "/atene-app/static/js/2.f9402512.chunk.js.map",
+    "index.html": "/atene-app/index.html",
+    "precache-manifest.81b3ed67ee9772e7b901ad2ef2538a88.js": "/atene-app/precache-manifest.81b3ed67ee9772e7b901ad2ef2538a88.js",
+    "service-worker.js": "/atene-app/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/atene-app/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.f9402512.chunk.js.LICENSE.txt": "/atene-app/static/js/2.f9402512.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9226f4a.js",
+    "static/js/2.f9402512.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.df586072.chunk.js"
+  ]
+}
