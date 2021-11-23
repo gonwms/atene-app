@@ -1,0 +1,29 @@
+{
+	"login": true,
+  "user": {
+    "name": "Gonzalo",
+    "email": "gonzalo@gmail.com",
+    "pass": "123456"
+  },
+	"services":{
+		"ML":{
+			"active":true,
+			"name": "Tienda mercado",
+			"key": "key-ML-EANJWDEK",
+			"token": "ML-CQUGEOTAZNXCCIFDMYT"
+		},
+		"VT":{
+			"active":false,
+			"name": "Tienda VTX",
+			"key": "key-VTX-EANJWDEK",
+			"token": "VTX-CQUGEOTAZNXCCIFDMYT"
+		},
+		"MG":{
+			"active":true,
+			"name": "Tienda MAGE",
+			"key": "MG-key-EANJWDEK",
+			"token": "MG-CQUGEOTAZNXCCIFDMYT"
+		}
+	}
+
+}

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Image, Icon, Button, Card } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import DATA from '../data.json';
 
 export default function Integraciones() {
   return (
@@ -24,9 +25,9 @@ export default function Integraciones() {
             <Button as={Link} to="/mercadolibre" basic>
               Ver detalles
             </Button>
-            <span color="green">
-              <Icon name="plug" />
-              active
+            <span style={{ color: DATA.services.ML.active ? 'green' : 'red' }}>
+              <Icon name="plug" />{' '}
+              {DATA.services.ML.active ? 'activo' : 'inactiva'}
             </span>
           </Card.Content>
         </Card>
@@ -37,7 +38,7 @@ export default function Integraciones() {
             ui={false}
           />
           <Card.Content>
-            <Card.Header>Mercadolibre</Card.Header>
+            <Card.Header>Vtex</Card.Header>
             <Card.Meta>
               <span className="date">ATENE</span>
             </Card.Meta>
@@ -46,9 +47,9 @@ export default function Integraciones() {
             <Button as={Link} to="/mercadolibre" basic>
               Ver detalles
             </Button>
-            <span color="green">
-              <Icon name="plug" />
-              active
+            <span style={{ color: DATA.services.VT.active ? 'green' : 'red' }}>
+              <Icon name="plug" />{' '}
+              {DATA.services.VT.active ? 'activo' : 'inactiva'}
             </span>
           </Card.Content>
         </Card>
@@ -59,7 +60,7 @@ export default function Integraciones() {
             ui={false}
           />
           <Card.Content>
-            <Card.Header>Mercadolibre</Card.Header>
+            <Card.Header>Magento</Card.Header>
             <Card.Meta>
               <span className="date">ATENE</span>
             </Card.Meta>
@@ -68,9 +69,9 @@ export default function Integraciones() {
             <Button as={Link} to="/mercadolibre" basic>
               Ver detalles
             </Button>
-            <span color="green">
-              <Icon name="plug" />
-              active
+            <span style={{ color: DATA.services.MG.active ? 'green' : 'red' }}>
+              <Icon name="plug" />{' '}
+              {DATA.services.MG.active ? 'activo' : 'inactiva'}
             </span>
           </Card.Content>
         </Card>

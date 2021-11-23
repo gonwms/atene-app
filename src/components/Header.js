@@ -1,10 +1,18 @@
 import React, { useContext } from 'react';
-import { Button, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react';
-import { AppContext } from '../Contexts/Provider';
+import DATA from '../data.json'
+import { 
+Button, 
+Icon, 
+// Image, 
+// Menu,
+// Segment,
+// Sidebar 
+} from 'semantic-ui-react';
+import { UIContext } from '../Contexts/Provider';
 import './Header.css';
 
 function Header() {
-  const [state, setState] = useContext(AppContext);
+  const [state, setState] = useContext(UIContext);
   function toggleOpenState() {
     setState({ ...state, isOpen: !state.isOpen });
   }
@@ -14,9 +22,14 @@ function Header() {
       <button
         className={`SidebarToggleBtn ${state.isOpen ? 'cerrar' : 'abrir'}`}
         onClick={toggleOpenState}
-      >
-        {state.isOpen ? <Icon name='angle left' ></Icon> : <Icon name='bars' ></Icon>	}
+        >
+        {state.isOpen ? (
+          <Icon name="angle left"></Icon>
+        ) : (
+          <Icon name="bars"></Icon>
+        )}
       </button>
+      <Button className='usuario'><Icon name="user"/>{DATA.user.name}</Button>
     </div>
   );
 }

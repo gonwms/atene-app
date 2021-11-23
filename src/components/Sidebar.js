@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import { AppContext } from '../Contexts/Provider';
+import { UIContext } from '../Contexts/Provider';
 import { Icon, Menu, Sidebar } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 
 export default function SidebarInner() {
-  const [state, setState] = useContext(AppContext);
+  const [state, setState] = useContext(UIContext);
 
   function closeSidebar() {
     setState({ isOpen: false });
@@ -20,7 +20,6 @@ export default function SidebarInner() {
       // inverted
       vertical
       visible={state.isOpen}
-      Uncover
       animation="push"
       // onHide={closeSidebar}
       // width="large"

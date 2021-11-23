@@ -7,11 +7,11 @@ const Provider = (props) => {
   });
 
   return (
-    <AppContext.Provider value={[state, setState]}>
+    <UIContext.Provider value={[state, setState]}>
       {props.children}
-    </AppContext.Provider>
+    </UIContext.Provider>
   );
 };
 
 export default Provider;
-export const AppContext = createContext();
+export const UIContext = createContext();
