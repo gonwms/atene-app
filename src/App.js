@@ -9,7 +9,7 @@ export default function App() {
    
 		<>
 		<Header/>
-		<Sidebar.Pushable >
+		<Sidebar.Pushable>
 					<SidebarInner />
 				<Sidebar.Pusher>
 				<Main />

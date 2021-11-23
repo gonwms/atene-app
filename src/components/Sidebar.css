@@ -1,0 +1,31 @@
+
+.sidebar {
+  padding:40px 0;
+}
+
+.item:before,
+.ui.vertical.sidebar.menu>.item:first-child:before{
+	display: none !important;
+}
+
+.sidebar a.item{
+  border:none;
+  font-size: 18px;
+	padding:20px !important;
+    color: red
+
+}
+
+.sidebar .icon{
+  margin-right: 22px;
+  color: rgba(38, 35, 56, 0.733);
+
+	font-size: 1.1em !important;
+}
+
+.ui.left.visible.sidebar, 
+.ui.right.visible.sidebar{
+  /* box-shadow: 0 0 80px -20px rgba(0, 0, 0, 0.1); */
+  box-shadow:  none;
+  /* border:none */
+}

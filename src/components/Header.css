@@ -1,0 +1,35 @@
+#header{
+  background: #ff5900;
+  background: linear-gradient(to right , #cb4a11 10%, #cd6517 80% );
+  /* background: #262338; */
+  vertical-align: center;
+  /* position: fixed; */
+  padding:8px 10px;
+  width: 100vw;
+  z-index: 1000;
+}
+
+
+.SidebarToggleBtn{
+  display: grid;
+  justify-items: center;
+  padding:12px 11px;
+  width: fit-content;
+  border:none;
+  border-radius: 200px;
+  margin:0;
+	background: rgba(255, 255, 255, 0.2);
+}
+.SidebarToggleBtn i{
+  margin:0;
+	font-size: 16px;
+}
+
+
+.SidebarToggleBtn.abrir{
+  color: white;
+}
+
+.SidebarToggleBtn.cerrar{
+  color: white;
+}

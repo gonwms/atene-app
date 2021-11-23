@@ -1,13 +1,17 @@
-import React from 'react'
-import {createContext,useState} from 'react';
+import React, { createContext, useState } from 'react';
 
-export default ({ children }) =>{
-    const [state,setState] = useState({});
-    return (            
-            <AppContext.Provider value={[state,setState]}>
-                {children}
-            </AppContext.Provider>  
-    );
-}
+const Provider = (props) => {
+  const [state, setState] = useState({
+    isOpen:true,
+    color:null
+  });
 
+  return (
+    <AppContext.Provider value={[state, setState]}>
+      {props.children}
+    </AppContext.Provider>
+  );
+};
+
+export default Provider;
 export const AppContext = createContext();

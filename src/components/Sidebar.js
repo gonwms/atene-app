@@ -1,35 +1,48 @@
-import React from 'react'
-import { Icon, Menu, Sidebar } from 'semantic-ui-react'
-import {Link} from 'react-router-dom';
-export default function SidebarInner(){
-	const [visible, setVisible] = React.useState(true)
-	return(
-		
-		
+import React, { useContext } from 'react';
+import { AppContext } from '../Contexts/Provider';
+import { Icon, Menu, Sidebar } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import './Sidebar.css';
+
+
+export default function SidebarInner() {
+  const [state, setState] = useContext(AppContext);
+
+  function closeSidebar() {
+    setState({ isOpen: false });
+  }
+
+  return (
     <Sidebar
+      className='sidebar'
       as={Menu}
-      icon='labeled'
-      inverted
+      // icon="labeled"
+      // inverted
       vertical
-      visible = {visible}
-			Uncover
-			animation ='push'
-			onHide={() => setVisible(false)}
-      width='thin'
+      visible={state.isOpen}
+      Uncover
+      animation="push"
+      // onHide={closeSidebar}
+      // width="large"
     >
-      <Menu.Item as= {Link} name='home' to='/'>
-        <Icon size='mini'  name='home' />
-        <span >asdasd</span>
+      <Menu.Item as={Link} name="home" to="/">
+        <span>
+          <Icon size='large' name="home" />
+          Inicio
+        </span>
       </Menu.Item>
-      <Menu.Item as= {Link} name='About' to='about'>
-        <Icon size='mini'  name='info circle' />
-        Games
+      <Menu.Item as={Link} name="About" to="about">
+        <span>
+          <Icon size='large' name="info circle" />
+          info
+        </span>
       </Menu.Item>
-      <Menu.Item as= {Link} name='Integraciones' to='/integraciones'>
-        <Icon size='mini'  name='plug' />
-        Channels
+      <Menu.Item as={Link} to="/integraciones">
+        <span>
+          <Icon size='large' name="plug" />
+          Integraciones
+        </span>
       </Menu.Item>
     </Sidebar>
-	)
-
+  );
 }

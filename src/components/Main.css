@@ -1,0 +1,13 @@
+#main {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f8f8f8;
+  /* width: calc(100vw - 100px); */
+}
+.sidebar + .pusher{
+  width: 100%;
+  transition: all 0.5s;
+}
+.sidebar.visible + .pusher {
+  width: calc(100% - 260px);
+}

@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
-// import './index.css';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
 import App from './App';
 import Provider from './Contexts/Provider';
 
 
-import * as serviceWorker from './serviceWorker';
-
 ReactDOM.render(
   <React.StrictMode>
-    <Provider>
+    <Provider >
     <BrowserRouter>
      <App />
     </BrowserRouter>
