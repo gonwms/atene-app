@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/atene-app/static/css/main.67965896.chunk.css",
-    "main.js": "/atene-app/static/js/main.16e0bc5b.chunk.js",
-    "main.js.map": "/atene-app/static/js/main.16e0bc5b.chunk.js.map",
+    "main.js": "/atene-app/static/js/main.7fef71d1.chunk.js",
+    "main.js.map": "/atene-app/static/js/main.7fef71d1.chunk.js.map",
     "runtime-main.js": "/atene-app/static/js/runtime-main.f6fb3519.js",
     "runtime-main.js.map": "/atene-app/static/js/runtime-main.f6fb3519.js.map",
     "static/css/2.1eb08e51.chunk.css": "/atene-app/static/css/2.1eb08e51.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.1eb08e51.chunk.css",
     "static/js/2.03d3b432.chunk.js",
     "static/css/main.67965896.chunk.css",
-    "static/js/main.16e0bc5b.chunk.js"
+    "static/js/main.7fef71d1.chunk.js"
   ]
 }
