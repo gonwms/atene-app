@@ -8,9 +8,9 @@ import './Sidebar.css';
 export default function SidebarInner() {
   const [state, setState] = useContext(UIContext);
 
-  function closeSidebar() {
-    setState({ isOpen: false });
-  }
+  // function closeSidebar() {
+  //   setState({ isOpen: false });
+  // }
 
   return (
     <Sidebar

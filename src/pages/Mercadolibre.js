@@ -18,12 +18,14 @@ function Mercadolibre() {
       password: '',
       legal: '',
     },
+    validateOnChange: false,
+    validateOnBlur: false,
     validationSchema: Yup.object({
-      name: Yup.string().required('El campo es requerido'),
-      token: Yup.string().required('El token es requerido'),
-      plan: Yup.string().required('El campo es requerido'),
+      name    : Yup.string().required('El campo es requerido'),
+      token   : Yup.string().required('El token es requerido'),
+      plan    : Yup.string().required('El campo es requerido'),
       password: Yup.string().required('La contraseña es requerido'),
-      legal: Yup.boolean().oneOf([true], 'Debe Aceptar las conficiones'),
+      legal   : Yup.boolean().oneOf([true], 'Debe Aceptar las conficiones'),
     }),
     onSubmit: (formData) => {
       console.log(formData);
@@ -53,7 +55,7 @@ function Mercadolibre() {
               placeholder="name"
               name="name"
               onChange={formik.handleChange}
-              error={formik.errors.name && true}
+              error= {formik.errors.name}
               value={formik.values.name}
             />
             <Form.Input
@@ -63,7 +65,7 @@ function Mercadolibre() {
               name="token"
               onChange={formik.handleChange}
               error={formik.errors.token && true}
-              value={formik.values.token}
+              // value={formik.values.token}
             />
             <Form.Input
               type="password"

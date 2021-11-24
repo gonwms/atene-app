@@ -8,13 +8,16 @@ import App from './App';
 import Provider from './Contexts/Provider';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
+
     <Provider >
     <BrowserRouter>
      <App />
     </BrowserRouter>
     </Provider>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
