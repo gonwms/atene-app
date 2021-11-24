@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/atene-app/static/css/main.69eda509.chunk.css",
-    "main.js": "/atene-app/static/js/main.df586072.chunk.js",
-    "main.js.map": "/atene-app/static/js/main.df586072.chunk.js.map",
-    "runtime-main.js": "/atene-app/static/js/runtime-main.a9226f4a.js",
-    "runtime-main.js.map": "/atene-app/static/js/runtime-main.a9226f4a.js.map",
-    "static/js/2.f9402512.chunk.js": "/atene-app/static/js/2.f9402512.chunk.js",
-    "static/js/2.f9402512.chunk.js.map": "/atene-app/static/js/2.f9402512.chunk.js.map",
+    "main.css": "/atene-app/static/css/main.67965896.chunk.css",
+    "main.js": "/atene-app/static/js/main.16e0bc5b.chunk.js",
+    "main.js.map": "/atene-app/static/js/main.16e0bc5b.chunk.js.map",
+    "runtime-main.js": "/atene-app/static/js/runtime-main.f6fb3519.js",
+    "runtime-main.js.map": "/atene-app/static/js/runtime-main.f6fb3519.js.map",
+    "static/css/2.1eb08e51.chunk.css": "/atene-app/static/css/2.1eb08e51.chunk.css",
+    "static/js/2.03d3b432.chunk.js": "/atene-app/static/js/2.03d3b432.chunk.js",
+    "static/js/2.03d3b432.chunk.js.map": "/atene-app/static/js/2.03d3b432.chunk.js.map",
     "index.html": "/atene-app/index.html",
-    "precache-manifest.81b3ed67ee9772e7b901ad2ef2538a88.js": "/atene-app/precache-manifest.81b3ed67ee9772e7b901ad2ef2538a88.js",
-    "service-worker.js": "/atene-app/service-worker.js",
-    "static/css/main.69eda509.chunk.css.map": "/atene-app/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.f9402512.chunk.js.LICENSE.txt": "/atene-app/static/js/2.f9402512.chunk.js.LICENSE.txt"
+    "static/css/2.1eb08e51.chunk.css.map": "/atene-app/static/css/2.1eb08e51.chunk.css.map",
+    "static/css/main.67965896.chunk.css.map": "/atene-app/static/css/main.67965896.chunk.css.map",
+    "static/js/2.03d3b432.chunk.js.LICENSE.txt": "/atene-app/static/js/2.03d3b432.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/atene-app/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9226f4a.js",
-    "static/js/2.f9402512.chunk.js",
-    "static/css/main.69eda509.chunk.css",
-    "static/js/main.df586072.chunk.js"
+    "static/js/runtime-main.f6fb3519.js",
+    "static/css/2.1eb08e51.chunk.css",
+    "static/js/2.03d3b432.chunk.js",
+    "static/css/main.67965896.chunk.css",
+    "static/js/main.16e0bc5b.chunk.js"
   ]
 }
