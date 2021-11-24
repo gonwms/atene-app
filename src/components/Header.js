@@ -27,7 +27,7 @@ function Header() {
             <Icon name="bars"></Icon>
           )}
         </button>
-        <Image className="logo" src={`${process.env.PUBLIC_URL}/media/logo-atene-imagen.png`} alt="" />
+        <Image className="logo" src={`${process.env.PUBLIC_URL}/media/logo-atene.png`} alt="" />
       </div>
       <Button className='usuario'><Icon name="user"/>{Data.user.name}</Button>
     </div>
