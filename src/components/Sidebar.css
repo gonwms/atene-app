@@ -1,6 +1,7 @@
 
 .sidebar {
   padding:40px 0;
+  border-top: none !important;
 }
 
 .item:before,

@@ -2,6 +2,8 @@
   /* background: #ff5900; */
   /* background: linear-gradient(to right , #cb4a11 10%, #cd6517 80% ); */
   background: #38383d;
+  background: #ffffff;
+  border: 1px solid #dededf;
   vertical-align: center;
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -11,7 +13,14 @@
   z-index: 1000;
 }
 
+.col1{
+  display: flex;
+}
 
+.logo{
+  max-height: 40px;
+  margin-left: 30px;
+}
 .SidebarToggleBtn{
   display: grid;
   justify-items: center;
@@ -20,7 +29,7 @@
   border:none;
   border-radius: 200px;
   margin:0;
-	background: rgba(255, 255, 255, 0.2);
+	/* background: rgba(38, 35, 56, 0.733); */
 }
 .SidebarToggleBtn i{
   margin:0;
@@ -29,16 +38,18 @@
 
 
 .SidebarToggleBtn.abrir{
-  color: white;
+  /* color: white; */
+  color: rgba(38, 35, 56, 0.733);
 }
 
 .SidebarToggleBtn.cerrar{
-  color: white;
+  color: rgba(38, 35, 56, 0.733);
+
 }
 
 .usuario{
   /* width: 180px; */
   justify-self: end;
-  background-color: rgba(255, 255, 255, 0.219) !important;
+  background-color: rgba(38, 35, 56, 0.733)!important;
   color: white !important
 }

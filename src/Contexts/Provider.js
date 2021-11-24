@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export default function Provider(props) {
+const Provider = (props) => {
   const [state, setState] = useState({
     isOpen:true,
     color:null
@@ -13,5 +13,5 @@ export default function Provider(props) {
   );
 };
 
-
+export default Provider;
 export const UIContext = createContext();

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { UIContext } from '../Contexts/Provider';
+import { UIContext } from '../contexts/Provider';
 import { Icon, Menu, Sidebar } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
