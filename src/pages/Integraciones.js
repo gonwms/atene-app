@@ -11,7 +11,7 @@ export default function Integraciones() {
       <Card.Group>
         <Card>
           <Image
-            src={`${process.env.PUBLIC_URL}/media/mercadolibre.png`}
+            src={`${process.env.PUBLIC_URL}/media/ml-logo.png`}
             wrapped
             ui={false}
           />
@@ -25,7 +25,7 @@ export default function Integraciones() {
             <Button as={Link} to="/mercadolibre" basic>
               Ver detalles
             </Button>
-            <span style={{ color: DATA.services.ML.active ? 'green' : 'red' }}>
+            <span style={{ color: DATA.services.ML.active ? '#2ad3a4' : '#bfbfbf'}}>
               <Icon name="plug" />{' '}
               {DATA.services.ML.active ? 'activo' : 'inactiva'}
             </span>
@@ -33,7 +33,7 @@ export default function Integraciones() {
         </Card>
         <Card>
           <Image
-            src={`${process.env.PUBLIC_URL}/media/mercadolibre.png`}
+            src={`${process.env.PUBLIC_URL}/media/vtx.logo.png`}
             wrapped
             ui={false}
           />
@@ -47,20 +47,20 @@ export default function Integraciones() {
             <Button as={Link} to="/mercadolibre" basic>
               Ver detalles
             </Button>
-            <span style={{ color: DATA.services.VT.active ? 'green' : 'red' }}>
-              <Icon name="plug" />{' '}
+            <span style={{ color: DATA.services.VT.active ? '#2ad3a4' : '#bfbfbf' }}>
+              <Icon name="plug" />
               {DATA.services.VT.active ? 'activo' : 'inactiva'}
             </span>
           </Card.Content>
         </Card>
         <Card>
           <Image
-            src={`${process.env.PUBLIC_URL}/media/mercadolibre.png`}
+            src={`${process.env.PUBLIC_URL}/media/tn-logo.png`}
             wrapped
             ui={false}
           />
           <Card.Content>
-            <Card.Header>Magento</Card.Header>
+            <Card.Header>Tienda Nube</Card.Header>
             <Card.Meta>
               <span className="date">ATENE</span>
             </Card.Meta>
@@ -69,9 +69,9 @@ export default function Integraciones() {
             <Button as={Link} to="/mercadolibre" basic>
               Ver detalles
             </Button>
-            <span style={{ color: DATA.services.MG.active ? 'green' : 'red' }}>
-              <Icon name="plug" />{' '}
-              {DATA.services.MG.active ? 'activo' : 'inactiva'}
+            <span style={{ color: DATA.services.TN.active ? '#2ad3a4' : '#bfbfbf' }}>
+              <Icon name="plug" />
+              {DATA.services.TN.active ? 'activo' : 'inactiva'}
             </span>
           </Card.Content>
         </Card>

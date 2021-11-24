@@ -1,25 +1,32 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { Form } from 'semantic-ui-react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
+
 const planOptions = [
-  { key: 'p', text: 'Pro', value: 'Pro' },
-  { key: 'e', text: 'Enterprise', value: 'Enterprise' },
-  { key: 'o', text: 'Other', value: 'other' },
+  { key: 'Pro', text: 'Pro', value: 'Pro' },
+  { key: 'Enterprise', text: 'Enterprise', value: 'Enterprise' },
+  { key: 'Other', text: 'Other', value: 'Other' },
 ];
 
 function Mercadolibre() {
+
+  const [validationRequired ,setValidationRequired] = useState(false)
+  
   const formik = useFormik({
+    // validateOnMount:false,
     initialValues: {
       name: '',
       token: '',
       plan: '',
       password: '',
-      legal: '',
+      legal: false,
     },
-    validateOnChange: false,
-    validateOnBlur: false,
+    validateOnChange: JSON.parse(`${validationRequired}`),
+    validateOnBlur: JSON.parse(`${validationRequired}`),
+
+    isValid: false,
     validationSchema: Yup.object({
       name    : Yup.string().required('El campo es requerido'),
       token   : Yup.string().required('El token es requerido'),
@@ -29,12 +36,13 @@ function Mercadolibre() {
     }),
     onSubmit: (formData) => {
       console.log(formData);
+
     },
   });
 
   const handleDropdownChange = (event, data) => {
     // console.log(data);
-    console.log(formik.values);
+    console.log(formik);
     formik.setFieldValue(data.name, data.value);
   };
   const handleCheckboxChange = (event, data) => {
@@ -93,7 +101,7 @@ function Mercadolibre() {
             error={formik.errors.legal && true}
             checked={formik.values.legal}
           />
-          <Form.Button type="submit" color="orange">
+          <Form.Button type="submit" color="orange" onClick={()=>setValidationRequired(true)} disabled={!(formik.isValid && formik.dirty)}>
             Guardar
           </Form.Button>
           <Form.Button type="button" onClick={formik.handleReset}>

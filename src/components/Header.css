@@ -1,7 +1,7 @@
 #header{
-  background: #ff5900;
+  /* background: #ff5900; */
   /* background: linear-gradient(to right , #cb4a11 10%, #cd6517 80% ); */
-  /* background: #262338; */
+  background: #38383d;
   vertical-align: center;
   display:grid;
   grid-template-columns: 1fr 1fr;
